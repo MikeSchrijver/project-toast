@@ -90,7 +90,8 @@ function ToastVariant({ type, activeVariant, setActiveVariant }) {
         id={id}
         type="radio"
         name="variant"
-        value={type === activeVariant}
+        value={type}
+        checked={activeVariant === type}
         onChange={() => setActiveVariant(type)}
       />
       {type}
